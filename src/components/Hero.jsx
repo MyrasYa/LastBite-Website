@@ -62,7 +62,7 @@ const Hero = () => {
           </div>
 
           {/* Sisi Kanan: Gambar Visual */}
-          <div className="flex-1 w-full max-w-xl ml-3">
+          <div className="flex-1 w-full max-w-xl ml-0">
             <div className="relative">
               {/* Efek Bingkai di belakang gambar */}
               <div className="absolute inset-0 bg-orange-primary rounded-3xl rotate-3 scale-105 opacity-25 shadow-2xl"></div>
@@ -70,7 +70,7 @@ const Hero = () => {
               <img
                 src={heroImage}
                 alt={descImage}
-                className="relative rounded-3xl shadow-xl object-cover w-full aspect-square md:aspect-video lg:aspect-square transform hover:scale-[1.02] transition-transform duration-500"
+                className="relative rounded-3xl shadow-xl object-cover w-full aspect-square md:aspect-video lg:aspect-square transform hover:scale-[1.02] transition-transform duration-500 "
               />
 
               {/* Floating Card Info */}
