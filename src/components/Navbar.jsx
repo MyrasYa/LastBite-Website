@@ -1,11 +1,13 @@
+import Profile from "../assets/images/Profile.jpg"
+
 const Navbar = () => {
   return (
-    <div className="navbar bg-background border-b border-orange-primary px-4 md:px-8">
+    <div className="navbar bg-background border-b  border-orange-primary px-4 md:px-8">
       {/* 1. BAGIAN KIRI: Logo */}
       <div className="navbar-start">
         <div className="flex items-center gap-3 cursor-pointer">
           <span className="text-3xl">🍕</span>
-          <span className="text-3xl font-bold tracking-tight text-orange-primary sm:block">
+          <span className="text-3xl font-bold tracking-tight text-orange-primary hidden sm:block">
             LastBite
           </span>
         </div>
@@ -17,7 +19,7 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="Cari makanan lezat..."
-            className="input input-border border border-border w-full rounded-full focus:border-orange-primary focus:outline-none focus:border-2 "
+            className="input input-border border border-border w-full rounded-full focus:border-orange-primary focus:outline-none focus:border-2 transition-all duration-50 "
           />
           <button className="absolute right-3 top-3">
             <svg
@@ -42,7 +44,11 @@ const Navbar = () => {
       <div className="navbar-end gap-2">
         {/* Ikon Keranjang */}
         <div className="dropdown dropdown-end">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle ">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost btn-circle border-b-orange-200 hover:border-orange-200 hover:bg-background "
+          >
             <div className="indicator">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +72,7 @@ const Navbar = () => {
         </div>
 
         {/* Tombol Login */}
-        <button className="btn bg-orange-primary hover:bg-orange-dark text-white border-none rounded-md px-6 mx-3 ">
+        <button className="btn bg-orange-primary hover:bg-orange-dark hover:rounded-4xl text-white border-none rounded-sm transition-all duration-350 ease-in-out px-6 mx-3 ">
           Masuk
         </button>
 
@@ -79,7 +85,8 @@ const Navbar = () => {
           >
             <div className="w-9 rounded-full hover:outline-none ">
               <img
-                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              className="object-top object-cover w-full h-full"
+                src={Profile}
                 alt="profile"
               />
             </div>

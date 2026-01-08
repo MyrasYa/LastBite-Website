@@ -1,10 +1,13 @@
-import heroImage from '../assets/images/heroimage.jpg'
+import heroImage from "../assets/images/heroimage.jpg";
 
 const Hero = () => {
+  const descImage = "Delicious Surplus Food";
+
   return (
-    <div className="relative bg-background overflow-hidden py-16 md:py-24 border-b border-border">
+    <div className="relative bg-background overflow-hidden py-16 md:py-24 border-b border-orange-primary">
       {/* Dekorasi Oranye di Background (Opsional) */}
-      <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-orange-primary/10 rounded-full blur-3xl"></div>
+      {/* <div className="absolute top-0 right-0 -translate-y-1 translate-x-1/2 w-100 h-96 bg-orange-primary rounded-full blur-3xl"></div> */}
+      <div className="absolute bottom-0 right-0 -translate-y-4/2 translate-x-1/4 w-100 h-96 bg-orange-primary rounded-full blur-3xl opacity-25 "></div>
 
       <div className="container mx-auto px-4 md:px-9 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-16">
@@ -59,14 +62,14 @@ const Hero = () => {
           </div>
 
           {/* Sisi Kanan: Gambar Visual */}
-          <div className="flex-1 w-full max-w-xl">
+          <div className="flex-1 w-full max-w-xl ml-3">
             <div className="relative">
               {/* Efek Bingkai di belakang gambar */}
-              <div className="absolute inset-0 bg-orange-primary rounded-3xl rotate-3 scale-105 opacity-20 shadow-xl"></div>
+              <div className="absolute inset-0 bg-orange-primary rounded-3xl rotate-3 scale-105 opacity-25 shadow-2xl"></div>
 
               <img
                 src={heroImage}
-                alt="Delicious Surplus Food"
+                alt={descImage}
                 className="relative rounded-3xl shadow-xl object-cover w-full aspect-square md:aspect-video lg:aspect-square transform hover:scale-[1.02] transition-transform duration-500"
               />
 

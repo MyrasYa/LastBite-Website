@@ -1,3 +1,8 @@
+import ayamImage from "../assets/images/Ayam_bakar.jpg";
+import donatImage from "../assets/images/Donat.jpg";
+import croissantImage from "../assets/images/Croissant.jpg";
+import saladImage from "../assets/images/Salad.jpg";
+
 export const products = [
   {
     id: 1,
@@ -5,7 +10,7 @@ export const products = [
     shopName: "Dunkin Kwitang",
     originalPrice: 65000,
     discountPrice: 32500,
-    image: "https://images.unsplash.com/photo-1551024601-56296352f488?w=500&q=80", // Foto dummy unsplash
+    image: donatImage,
     timeLeft: "2 jam lagi",
     isSoldOut: false,
   },
@@ -15,7 +20,7 @@ export const products = [
     shopName: "Warteg Bahari",
     originalPrice: 25000,
     discountPrice: 12000,
-    image: "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=500&q=80",
+    image:  ayamImage,
     timeLeft: "4 jam lagi",
     isSoldOut: false,
   },
@@ -25,7 +30,7 @@ export const products = [
     shopName: "Starbucks Reserve",
     originalPrice: 45000,
     discountPrice: 22000,
-    image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&q=80",
+    image: croissantImage,
     timeLeft: "30 menit lagi",
     isSoldOut: true, // Nanti ini tombolnya jadi disable
   },
@@ -35,7 +40,7 @@ export const products = [
     shopName: "Healthy Bar",
     originalPrice: 30000,
     discountPrice: 15000,
-    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80",
+    image: saladImage,
     timeLeft: "5 jam lagi",
     isSoldOut: false,
   }
